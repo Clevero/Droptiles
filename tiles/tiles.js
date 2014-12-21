@@ -10,17 +10,7 @@ window.DefaultTiles = [
         name :"Section1",
         tiles: [
            { id: "flickr1", name:"flickr" },
-           //{ id: "amazon1", name:"amazon" },
-           { id: "news1", name: "news" },
-           { id: "reader1", name: "reader" },        
-           { id: "weather1", name: "weather" },
-           { id: "cuttherope1", name: "cutTheRope" },
-           //{ id: "calendar1", name: "calendar" },
-           { id: "myblog1", name: "myblog" },		   
-           { id: "feature1", name: "feature" },
-           { id: "angrybirds1", name: "angrybirds" }
-           //{ id: "facebook1", name: "facebook" }
-           
+	   { id: "owncloud", name: "owncloud" },        
         ]
     }
 ];
@@ -37,129 +27,16 @@ window.DefaultTiles = _.map(window.DefaultTiles, function (section) {
 // Definition of the tiles, their default values.
 window.TileBuilders = {
 
-    weather: function (uniqueId) {
-        return {
-            uniqueId: uniqueId,
-            name: "weather",
-            color: "bg-color-blue",
-            label: "Weather",
-            appTitle: "Weather App",
-            appUrl: "http://www.bbc.co.uk/weather/",
-            size: "tile-double",
-            scriptSrc: ["tiles/weather/jQuery.simpleWeather.js", "tiles/weather/weather.js"],
-            cssSrc: ["tiles/weather/weather.css"],
-            initFunc: "load_weather",
-            initParams: {
-                location: 'London, UK'
-            }
-        };
-    },
-
-    amazon: function (uniqueId) {
-        return {
-            uniqueId: uniqueId,
-            name: "amazon",
-            color: "bg-color-yellow",
-            label: "Amazon",
-            iconSrc: "img/Amazon alt.png",
-            appTitle: "Amazon",
-            appUrl: "http://www.amazon.com",
-            size: "tile-double-vertical",
-            iconSrc: "img/Amazon.png"
-        };
-    },
-
-   owncloud: function (uniqueId) {
-        return {
+    owncloud: function (uniqueId) {
+       return {
             uniqueId: uniqueId,
             name: "owncloud",
+            tileImage: "img/ownCloud.svg",
+            label: "",
             color: "bg-color-blue",
-            label: "owncloud",
-            iconSrc: "img/ownCloud.png",
-            appTitle: "ownCloud",
-            appUrl: "https://owncloud.meinecloud.me",
-            size: "tile-double-vertical",
-            iconSrc: "img/owncloud.png"
-        };
-    },
-
-    maps: function (uniqueId) {
-        return {
-            uniqueId: uniqueId,
-            name: "maps",
-            color: "bg-color-purple",
-            label: "Maps",
-            appTitle: "Maps",
-            appUrl: "http://maps.google.com/",
-            iconSrc: "img/Google Maps.png",
-            appInNewWindow: true
-        };
-    },
-
-    ie: function (uniqueId) {
-        return {
-            uniqueId: uniqueId,
-            name: "ie",
-            iconSrc: "img/Internet%20Explorer.png",
-            label: "Internet Explorer",
-            appUrl: "http://ie.microsoft.com/testDrive/"
-        };
-    },
-
-    video: function (uniqueId) {
-        return {
-            uniqueId: uniqueId,
-            name: "video",
-            size: "tile-double",
-            color: "bg-color-darken",
-            iconSrc: "img/Youtube.png",
-            slides: ['<iframe width="310" height="174" src="http://youtube.com/embed/g4iD-9GSW-0" frameborder="0" allowfullscreen=""></iframe>']
-        };
-    },
-
-    facebook: function (uniqueId) {
-        return {
-            uniqueId: uniqueId,
-            name: "facebook",
-            iconSrc: "img/Facebook alt 3.png",
-            label: "Facebook",
-            color: "bg-color-blueDark",
-            appUrl: "http://www.facebook.com/",
-            appInNewWindow: true
-        };
-    },
-
-    calendar: function (uniqueId) {
-        return {
-            uniqueId: uniqueId,
-            name: "calendar",
-            iconSrc: "img/Calendar.png",
-            label: "Calendar",
-            size: "tile-double",
-            color: "bg-color-green",
-            appUrl: "http://www.google.com/calendar/",
-            appInNewWindow: true
-        };
-    },
-
-    library: function (uniqueId) {
-        return {
-            uniqueId: uniqueId,
-            name: "library",
-            iconSrc: "img/Libraries.png",
-            label: "Library",
-            color: "bg-color-orange",
-            appUrl: "http://www.londonlibrary.co.uk/"
-        };
-    },
-
-    skydrive: function (uniqueId) {
-        return {
-            uniqueId: uniqueId,
-            name: "skydrive",
-            iconSrc: "img/Live SkyDrive.png",
-            label: "Skydrive",
-            appUrl: "http://www.skydrive.com/"
+	    size: "tile-double",
+            appIcon: "img/ownCloud.svg",
+            appUrl: "https://owncloud.meinecloud.me"
         };
     },
 
@@ -180,106 +57,6 @@ window.TileBuilders = {
         };
     },
 
-    email: function (uniqueId) {
-        return {
-            uniqueId: uniqueId,
-            name: "email",
-            iconSrc: "img/Gmail Alt.png",
-            label: "Gmail",
-            color: "bg-color-pink",
-            appUrl: "http://www.gmail.com/",
-            appInNewWindow: true
-        };
-    },
-
-    youtube: function (uniqueId) {
-        return {
-            uniqueId: uniqueId,
-            name: "youtube",
-            iconSrc: "img/Youtube.png",
-            label: "Youtube",
-            color: "bg-color-darken",
-            appUrl: "http://www.youtube.com/",
-            appInNewWindow: true
-        };
-    },
-
-    angrybirds: function (uniqueId) {
-        return {
-            uniqueId: uniqueId,
-            name: "angrybirds",
-            tileImage: "img/Angrybirds.jpg",
-            appUrl: "http://chrome.angrybirds.com/"
-        };
-    },
-
-    wikipedia: function (uniqueId) {
-        return {
-            uniqueId: uniqueId,
-            name: "wikipedia",
-            tileImage: "img/Wikipedia alt 1.png",
-            label: "Wikipedia",
-            color: "bg-color-green",
-            appIcon: "img/Wikipedia alt 1.png",
-            appUrl: "http://www.wikipedia.org"
-        };
-    },
-
-
-    news: function (uniqueId) {
-        return {
-            uniqueId: uniqueId,
-            name: "news",
-            color: "bg-color-pink",
-            size: "tile-double",
-            appUrl: "http://www.bbc.co.uk/news/world/",
-            scriptSrc: ["tiles/news/news.js?v=1"],
-            cssSrc: ["tiles/news/news.css?v=1"],
-            initFunc: "load_news",
-            initParams: { url: "http://feeds.bbci.co.uk/news/world/rss.xml" }
-        };
-    },
-
-    myblog: function (uniqueId) {
-        return {
-            uniqueId: uniqueId,
-            name: "myblog",
-            label: "My Blog",
-            color: "bg-color-blueDark",
-            size: "tile-double",
-            appUrl: "http://omaralzabir.com/",
-            scriptSrc: ["tiles/news/news.js?v=1"],
-            cssSrc: ["tiles/news/news.css?v=1"],
-            initFunc: "load_news",
-            initParams: { url: "http://omaralzabir.com/feed" }
-        };
-    },
-
-    feature: function (uniqueId) {
-        return {
-            uniqueId: uniqueId,
-            name: "feature",
-            color: "bg-color-green",
-            size: "tile-double",
-            appUrl: "http://oazabir.github.com/Droptiles/",
-            slidesFrom: ["tiles/features/feature1.html",
-                "tiles/features/feature2.html",
-                "tiles/features/feature3.html"],
-            cssSrc: ["tiles/features/features.css"]
-        };
-    },
-
-    howto: function (uniqueId) {
-        return {
-            uniqueId: uniqueId,
-            name: "howto",
-            color: "bg-color-blue",
-            size: "tile-triple tile-triple-vertical",
-            appUrl: "http://oazabir.github.com/Droptiles/",
-            slidesFrom: ["tiles/features/howto.html?2"]
-        };
-    },
-
     dynamicTile: function (uniqueId) {
         return {
             uniqueId: uniqueId,
@@ -294,36 +71,4 @@ window.TileBuilders = {
             //initFunc: "load_dynamic"
         }
     },
-
-    cutTheRope: function (uniqueId) {
-        return {
-            uniqueId: uniqueId,
-            name: "cutTheRope",
-            tileImage: "img/CutTheRope.png",
-            appUrl: "http://www.cuttherope.ie/"
-        };
-    },
-
-    buy : function (uniqueId) {
-        return {
-            uniqueId: uniqueId,
-            name: "buy",
-            color: "bg-color-blueDark",
-            size: 'tile-double tile-double-vertical',
-            slidesFrom: ["tiles/buy/buy.html?v=1"],
-            cssSrc: ["tiles/buy/buy.css"]
-        };       
-    },
-    
-    reader: function (uniqueId) {
-        return {
-            uniqueId: uniqueId,
-            name: "reader",
-            color: "bg-color-red",
-            label: "News Reader",
-            iconSrc: 'img/Google Reader.png',
-            appUrl: 'RssReader.aspx'
-        };
-    }
-        
 };
