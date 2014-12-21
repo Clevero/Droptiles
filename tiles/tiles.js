@@ -22,26 +22,6 @@ window.DefaultTiles = [
            //{ id: "facebook1", name: "facebook" }
            
         ]
-    },
-    {
-        name: "Section2",
-        tiles: [
-           { id: "video1", name: "video" },
-           { id: "wikipedia1", name: "wikipedia" },           
-           //{ id: "email1", name: "email" },
-           //{ id: "maps1", name: "maps" },
-           { id: "facebook1", name: "facebook" },
-           { id: "ie1", name: "ie" },
-           { id: "dynamicTile1", name: "dynamicTile" },
-           { id: "buy1", name: "buy" }]
-    },
-    {
-        name: "Section3", tiles: [
-            
-           //{ id: "youtube1", name: "youtube" },
-           //{ id: "ie1", name: "ie" }
-           { id: "howto1", name: "howto" }           
-        ]
     }
 ];
 
