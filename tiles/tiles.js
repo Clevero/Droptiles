@@ -10,7 +10,8 @@ window.DefaultTiles = [
         name :"Section1",
         tiles: [
            { id: "flickr1", name:"flickr" },
-	   { id: "owncloud", name: "owncloud" },        
+	   { id: "owncloud", name: "owncloud" },
+           { id: "newsreader", name: "newsreader" },       
         ]
     }
 ];
@@ -31,12 +32,24 @@ window.TileBuilders = {
        return {
             uniqueId: uniqueId,
             name: "owncloud",
-            tileImage: "img/ownCloud.svg",
-            label: "",
-            color: "bg-color-blue",
-	    size: "tile-double",
-            appIcon: "img/ownCloud.svg",
+            tileImage: "img/cloud.png",
+            label: "ownCloud",
+            color: "bg-color-blueOwncloud",
+            appIcon: "img/cloud.png",
             appUrl: "https://owncloud.meinecloud.me"
+        };
+    },
+
+    newsreader: function (uniqueId) {
+       return {
+            uniqueId: uniqueId,
+            name: "TT-RSS",
+            tileImage: "img/newsReader.svg",
+            label: "",
+	    color: "bg-color-white",
+            size: "",
+            appIcon: "img/newsReader.png",
+            appUrl: "https://tt-rss.meinecloud.me",
         };
     },
 
