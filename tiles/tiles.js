@@ -69,6 +69,20 @@ window.TileBuilders = {
         };
     },
 
+   owncloud: function (uniqueId) {
+        return {
+            uniqueId: uniqueId,
+            name: "owncloud",
+            color: "bg-color-blue",
+            label: "owncloud",
+            iconSrc: "img/ownCloud.png",
+            appTitle: "ownCloud",
+            appUrl: "https://owncloud.meinecloud.me",
+            size: "tile-double-vertical",
+            iconSrc: "img/owncloud.png"
+        };
+    },
+
     maps: function (uniqueId) {
         return {
             uniqueId: uniqueId,
