@@ -5,7 +5,7 @@
 <asp:Content runat="server" ContentPlaceHolderID="scripts">
     <!-- Copyright 2012 Omar AL Zabir -->
     <script type="text/javascript" src="js/TheCore.js?v=14"></script>
-    <script type="text/javascript" src="Tiles/AppStoreTiles.js?v=14"></script>
+    <script type="text/javascript" src="tiles/AppStoreTiles.js?v=14"></script>
     <script type="text/javascript" src="js/AppStore.js?v=14"></script>       
 </asp:Content>
 
