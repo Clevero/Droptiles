@@ -423,17 +423,6 @@ body {
     top: 115px;
 }
 
-#trash {
-    position: fixed;
-    top: 50px;
-    left: 50%;
-    width: 64px;
-    height: 64px;
-    z-index: 65000;
-    background: url(../img/Trashcan.png) no-repeat;
-    display: none;
-}
-
 .trashcash_highlight {
     border: 2px solid yellow;
 }
