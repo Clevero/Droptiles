@@ -37,7 +37,6 @@ var ui = {
     tile_content_slide_delay: 10000,
     tile_content_sub_selector: '.tile-content-sub',
     tile_content_sub: 'tile-content-sub',
-    trash: '#trash',
     position_cookie: 'tiles',
     splash_screen_zindex: 65000,
     splash_screen_icon_class: 'tile-icon-large',

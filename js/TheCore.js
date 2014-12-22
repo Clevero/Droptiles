@@ -27,7 +27,6 @@ var DashboardModel = function (title, sections, user, ui) {
     this.user = ko.observable(user);
     this.title = ko.observable(title);
     this.sections = ko.observableArray(sections);
-    this.trash = ko.observableArray([]);
 
     // Get a section model.
     this.getSection = function (uniqueId) {

@@ -38,7 +38,6 @@ var ui = {
     tile_content_slide_delay: 5000,
     tile_content_sub_selector: '.tile-content-sub',
     tile_content_sub: 'tile-content-sub',
-    trash: '#trash',
     position_cookie: 'tiles',
     splash_screen_zindex: 65000,
     splash_screen_icon_class: 'tile-icon-large',
@@ -359,57 +358,6 @@ var ui = {
     },
 
     /*
-        Enable the drag & drop behavior of tiles and dropping of tiles on the trash can.
-    */
-    //makeSortable: function () {
-    //    $(ui.trash).droppable({
-    //        tolerance: 'touch',
-    //        hoverClass: 'trashcash_highlight',
-    //        over: function (event, o) {
-    //            //$(this).animate({ "zoom": "1.5" });
-    //        },
-    //        out: function (event, o) {
-    //            //$(this).animate({ "zoom": "1.0" });
-    //        },
-    //        drop: function (event, o) {
-    //            //$(this).animate({ "zoom": "1.0" });
-    //            var tileId = o.draggable[0].id;
-    //            $(ui.trash).fadeOut();
-    //            _.defer(function () {
-    //                viewModel.removeTile(tileId);
-    //            });
-                
-    //        }
-    //    });
-
-    //    $(ui.metro_section_selector).sortable({
-    //        connectWith: ui.metro_section_selector,
-    //        revert: true,
-    //        distance: 10,
-    //        tolerance: "pointer",
-    //        delay: 500,
-    //        "opacity": 0.6,
-    //        start: function (event, o) {
-    //            console.log(o);
-    //            window.dragging = true;
-    //            o.item.data("noclick", true);
-    //            $(ui.trash).fadeIn();
-    //            //$('#body').kinetic("stop");
-    //        },
-    //        stop: function (event, o) {
-    //            console.log(o);
-    //            window.dragging = false;
-    //            o.item.data("noclick", false);                
-    //            $(ui.trash).fadeOut();
-
-    //            //_.delay(function () {
-    //            //    ui.recalcIndex();
-    //            //}, 1000);
-    //        }
-    //    });
-    //},
-
-    /*
         When a tile is dragged & dropped, take the tile DIV position and use that
         to calculate the index of tile objects in the viewModel. A special case is when
         a tile is moved from a section to another. In that case, remove the tile from
@@ -607,14 +555,6 @@ $(document).ready(function () {
     // Hide the body area until it is fully loaded in order to prevent flickrs
     $('#content').css('visibility', 'visible');
 
-    ko.bindingHandlers.sortable.options.start = function (arg) {
-        $(ui.trash).show();
-    }
-    ko.bindingHandlers.sortable.afterMove = function (arg) {
-        $(ui.trash).hide();
-        console.log(arg);
-    }
-    
     ko.applyBindings(viewModel);
 
     ui.hideMetroSections();

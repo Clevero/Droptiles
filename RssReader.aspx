@@ -32,9 +32,6 @@
     <div id="body" class="unselectable">        
         <div id="content" style="visibility: hidden">
             <div id="metro-sections-container" class="metro">
-                <div id="trash" class="trashcan">
-                    <img src="img/Trashcan.png" width="64" height="64" />
-                </div>
                 <div class="metro-sections" data-bind="foreach: sections">
                     <div class="metro-section" data-bind="attr: {id : uniqueId}">
                         <div class="metro-section-title" data-bind="text: name"></div>
