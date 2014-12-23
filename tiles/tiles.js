@@ -9,9 +9,11 @@ window.DefaultTiles = [
     {
         name :"Section1",
         tiles: [
-           { id: "flickr1", name:"flickr" },
+           //{ id: "flickr1", name:"flickr" },
 	   { id: "owncloud", name: "owncloud" },
-           { id: "newsreader", name: "newsreader" },       
+           { id: "newsreader", name: "newsreader" },
+           { id: "settings", name: "settings" },
+           { id: "catapi", name: "catapi" }       
         ]
     }
 ];
@@ -34,8 +36,34 @@ window.TileBuilders = {
             name: "owncloud",
             tileImage: "img/cloud.png",
             label: "ownCloud",
+            size: "",
             color: "bg-color-blueOwncloud",
             appIcon: "img/cloud.png",
+            appUrl: "https://owncloud.meinecloud.me"
+        };
+    },
+
+   catapi: function (uniqueId) {
+       return {
+            uniqueId: uniqueId,
+            name: "catapi",
+            tileImage: "http://thecatapi.com/api/images/get?format=src&type=gif",
+            label: "TheCatAPI.com !",
+            size: "",
+            color: "bg-color-darken",
+            appIcon: "",
+            appUrl: "javascript:history.go(0);"
+        };
+    },
+
+   settings: function (uniqueId) {
+       return {
+            uniqueId: uniqueId,
+            name: "settings",
+            tileImage: "img/configure.png",
+            label: "Settings",
+            color: "bg-color-darken",
+            appIcon: "img/configure.png",
             appUrl: "https://owncloud.meinecloud.me"
         };
     },
@@ -44,7 +72,7 @@ window.TileBuilders = {
        return {
             uniqueId: uniqueId,
             name: "TT-RSS",
-            tileImage: "img/newsReader.svg",
+            tileImage: "img/newsReader.png",
             label: "",
 	    color: "bg-color-white",
             size: "",
