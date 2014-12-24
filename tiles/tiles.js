@@ -12,7 +12,9 @@ window.DefaultTiles = [
 	   { id: "owncloud", name: "owncloud" },
            { id: "newsreader", name: "newsreader" },
            { id: "settings", name: "settings" },
-           { id: "catapi", name: "catapi" }       
+           { id: "catapi", name: "catapi" },
+           { id: "proxy", name: "proxy" },
+           { id: "phpmyadmin", name: "phpmyadmin" },       
         ]
     }
 ];
@@ -42,16 +44,42 @@ window.TileBuilders = {
         };
     },
 
+   phpmyadmin: function (uniqueId) {
+       return {
+            uniqueId: uniqueId,
+            name: "phpmyadmin",
+            tileImage: "img/phpMyAdmin.png",
+            label: "",
+            size: "",
+            color: "bg-color-darken",
+            appIcon: "img/phpMyAdmin.png",
+            appUrl: "https://phpmyadmin.meinecloud.me"
+        };
+    },
+
+   proxy: function (uniqueId) {
+       return {
+            uniqueId: uniqueId,
+            name: "proxy",
+            tileImage: "img/internet.png",
+            label: "miniProxy",
+            size: "",
+            color: "bg-color-darken",
+            appIcon: "img/internet.png",
+            appUrl: "http://proxy.meinecloud.me"
+        };
+    },
+
    catapi: function (uniqueId) {
        return {
             uniqueId: uniqueId,
             name: "catapi",
             tileImage: "http://thecatapi.com/api/images/get?format=src&type=gif",
             label: "TheCatAPI.com !",
-            size: "",
+            size: "tile",
             color: "bg-color-darken",
             appIcon: "",
-            appUrl: "javascript:history.go(0);"
+            appUrl: "http://meinecloud.me/droptiles"
         };
     },
 
