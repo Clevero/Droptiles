@@ -366,11 +366,11 @@ html, body {
 
     
 body {
-    background: transparent url(../img/wallpapers/windows8_metro_green_1920_1080.jpg);
-    position: relative;
-    /*padding-top: 90px;*/
-    background-color: #fff;
-    background-repeat: repeat;    
+	background: url(/droptiles/wl.jpg) no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
     }
 
 .appstore {
