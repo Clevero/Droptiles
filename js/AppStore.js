@@ -50,8 +50,6 @@ var ui = {
     anon_last_name: 'Anonymous',
     anon_photo: 'img/User No-Frame.png',
 
-    login_page: "ServerStuff/Login.aspx",
-    logout_page: "ServerStuff/Logout.ashx",
     settings_page: "ServerStuff/Settings.aspx"
 };
 

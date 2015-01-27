@@ -51,8 +51,6 @@ var ui = {
     anon_last_name: 'Anonymous',
     anon_photo: 'img/User No-Frame.png',
 
-    login_page: "ServerStuff/Login.aspx",
-    logout_page: "ServerStuff/Logout.ashx",
     settings_page: "ServerStuff/Settings.aspx",
 
     appRunning: false,
@@ -492,22 +490,6 @@ var ui = {
                         'top': ($(window).height() - 512) / 2
                     })
             );
-    },
-
-    login: function () {
-        ui.splashScreen(ui.signin_splash_color, ui.signin_splash_icon, function (div) {
-            ui.launchApp("Login", "Login", ui.login_page, function () {
-                div.fadeOut();
-            });
-        });
-    },
-
-    logout: function () {
-        ui.splashScreen(ui.signin_splash_color, ui.signin_splash_icon, function (div) {
-            ui.launchApp("Logout", "Logout", ui.logout_page, function () {
-                div.fadeOut();
-            });
-        });
     },
 
     settings: function () {
