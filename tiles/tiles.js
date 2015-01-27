@@ -9,10 +9,10 @@ window.DefaultTiles = [
     {
         name :"Section1",
         tiles: [
+	   { id: "catapi", name: "catapi" },
 	   { id: "owncloud", name: "owncloud" },
            { id: "newsreader", name: "newsreader" },
            { id: "settings", name: "settings" },
-           { id: "catapi", name: "catapi" },
            { id: "proxy", name: "proxy" },
            { id: "phpmyadmin", name: "phpmyadmin" },       
         ]
@@ -76,7 +76,7 @@ window.TileBuilders = {
             name: "catapi",
             tileImage: "http://thecatapi.com/api/images/get?format=src&type=gif",
             label: "TheCatAPI.com !",
-            size: "tile",
+            size: "tile-triple tile-double-vertical",
             color: "bg-color-darken",
             appIcon: "",
             appUrl: "http://meinecloud.me/droptiles"
