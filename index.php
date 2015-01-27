@@ -65,15 +65,7 @@
 
         <div id="content" style="visibility: hidden">
             <div id="start" data-bind="text: title"></div>
-            <div id="user" data-bind="with: user" onclick="ui.settings()">
-                <div id="name">
-                    <div id="firstname" data-bind="text: firstName">Omar</div>
-                    <div id="lastname" data-bind="text: lastName">AL Zabir</div>
-                </div>
-                <div id="photo">
-                    <img src="img/User No-Frame.png" data-bind="attr: {src: photo}" width="40" height="40" />
-                </div>
-            </div>
+
             <div id="browser_incompatible" class="alert">
                 <button class="close" data-dismiss="alert">Ã—</button>
                 <strong>Warning!</strong>
