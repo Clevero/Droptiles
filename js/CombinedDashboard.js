@@ -1277,12 +1277,12 @@ $(document).ready(function () {
             window.scrollBy(-delta * 50, 0);
     });
 
-    $("#navbar").tooltip({
-        title: "I am still here. Come here to go back to Dashboard",
-        animate: true,
-        placement: 'bottom',
-        trigger: 'manual'
-    });
+    //$("#navbar").tooltip({
+        //title: "I am still here. Come here to go back to Dashboard",
+        //animate: true,
+        //placement: 'bottom',
+        //trigger: 'manual'
+    //});
 
 
     // Handles browser back button. When user presses the back button,
