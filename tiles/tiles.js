@@ -76,7 +76,7 @@ window.TileBuilders = {
             name: "catapi",
             tileImage: "http://thecatapi.com/api/images/get?format=src&type=gif",
             label: "TheCatAPI.com !",
-            size: "tile-triple tile-double-vertical",
+            size: "tile-quadro tile-double-vertical",
             color: "bg-color-darken",
             appIcon: "",
             appUrl: "http://meinecloud.me/droptiles"
