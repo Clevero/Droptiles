@@ -69,7 +69,7 @@
             <div id="browser_incompatible" class="alert">
                 <button class="close" data-dismiss="alert">Ã—</button>
                 <strong>Warning!</strong>
-                Your browser is incompatible with Droptiles. Please use Internet Explorer 9+, Chrome, Firefox or Safari.
+		Dein Browser unterstützt anscheinend das Dashboard nicht. Bitte nutze Firefox, Chrome, Safari oder IE 9+
             </div>
             <div id="CombinedScriptAlert" class="alert">
                 <button class="close" data-dismiss="alert">Ã—</button>
