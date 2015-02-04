@@ -408,7 +408,7 @@ body {
 }
 
 #body {
-    overflow: auto;
+    overflow: hidden;
     width: 100%;
     min-height: 100%;            
 }
@@ -487,6 +487,10 @@ body {
 }
 
 
+
+
+
+
 /* Scrollbar for IE */
 html, body
 {
@@ -499,7 +503,7 @@ html, body
     scrollbar-track-color: #353535;
 }
         
-/*scroll bar for safari & chrome*/
+/* scroll bar for safari & chrome */
 
 ::-webkit-scrollbar {
 width: 15px;
@@ -511,14 +515,14 @@ cursor: move;
 ::-webkit-scrollbar-button:end:increment {
 height: 1px;
 display: block;
-/*background-color: #353535;*/
+/*background-color: #353535; */
 }
 
 ::-webkit-scrollbar-button:horizontal:start:decrement,
 ::-webkit-scrollbar-button:horizontal:end:increment {
 height: 1px;
 display: block;
-/*background-color: #353535;*/
+/* background-color: #353535; */
 }
 
 ::-webkit-scrollbar-track-piece {
@@ -533,6 +537,7 @@ cursor: move;
 border: 1px solid #AAAAAA;
 -webkit-border-radius: 6px;
 }
+
         
 .unselectable 
 {
