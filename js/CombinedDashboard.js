@@ -894,7 +894,7 @@ var ui = {
            .appendTo(document.body)
            .attr({ 'src': url })
            .load(function () {
-               ui.hideNavBar();
+               /* ui.hideNavBar(); */
                loaded();
                $(this).css('visibility', 'visible');
            });
@@ -1110,6 +1110,9 @@ var ui = {
     /*
         Animate a full screen splash
     */
+
+
+/*
     splashScreen: function (colorClass, icon, complete) {
         ui.hideAllIframes();
 
@@ -1153,6 +1156,9 @@ var ui = {
                     })
             );
     },
+
+*/
+
 
     settings: function () {
         if (viewModel.user().isAnonymous)

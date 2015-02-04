@@ -225,14 +225,14 @@ var ui = {
                'top': "0px",
                'width': '100%',
                'height': '100%',
-               'z-index': ui.app_iframe_zindex,
+               'z-index': ui.app_iframe_zindex, /* könnte relevant sein */
                'visibility': 'hidden',
                'background-color': 'white'
            })
            .appendTo(document.body)
            .attr({ 'src': url })
            .load(function () {
-               ui.hideNavBar();
+               /* ui.hideNavBar(); */
                loaded();
                $(this).css('visibility', 'visible');
            });
@@ -448,6 +448,8 @@ var ui = {
     /*
         Animate a full screen splash
     */
+
+/*
     splashScreen: function (colorClass, icon, complete) {
         ui.hideAllIframes();
 
@@ -491,6 +493,9 @@ var ui = {
                     })
             );
     },
+
+
+*/
 
     settings: function () {
         if (viewModel.user().isAnonymous)
