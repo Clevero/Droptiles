@@ -8,7 +8,7 @@
     <meta name="license" content="Free for personal use. For commercial use, contact me for License. http://oazabir.github.com/Droptiles/" />
     <meta name="apple-mobile-web-app-capable" content="yes" /> 
     
-    <title>Droptiles - Web 2.0 Dashboard in metro style</title>
+    <title>meineCloud.me - Dashboard</title>
 
     <link rel="icon" href="favicon.ico" type="image/x-icon">
 
