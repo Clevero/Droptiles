@@ -366,7 +366,7 @@ html, body {
 
     
 body {
-	background: url(/droptiles/bg2.jpg) no-repeat center center fixed;
+	background: url(/bg2.jpg) no-repeat center center fixed;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
@@ -559,7 +559,7 @@ border: 1px solid #AAAAAA;
         color: black;
     }
 
-.theme-Bloom {
-        background-image: url("../img/wallpapers/In Bloom.jpg");
+.theme-Modern {
+        background-image: url("/bild.jpg");
         background-repeat: repeat;    
 }

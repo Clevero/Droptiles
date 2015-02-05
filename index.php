@@ -53,7 +53,7 @@
                                 <ul class="dropdown-menu">
                                     <li><a href="#" onclick="ui.switchTheme('theme-green')">Green</a></li>
                                     <li><a href="#" onclick="ui.switchTheme('theme-white')">White</a></li>
-                                    <li><a href="#" onclick="ui.switchTheme('theme-Bloom')">Bloom</a></li>                                    
+                                    <li><a href="#" onclick="ui.switchTheme('theme-Modern')">Modern</a></li>                                    
                                 </ul>
                             </li>                            
 
