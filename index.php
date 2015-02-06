@@ -40,7 +40,7 @@
 
 
                             <li>
-                                <form id="googleForm" class="navbar-search pull-left" action="http://www.google.com/search" target="_blank">
+                                <form id="googleForm" class="navbar-search pull-left" action="http://duckduckgo.com/search" target="_blank">
                                     <input id="googleSearchText" type="text" class="search-query span2" name="q" placeholder="Google">
                                 </form>
                             </li>
@@ -171,7 +171,7 @@
 </script>
 
     <!-- Copyright 2012 Omar AL Zabir -->
-    <script type="text/javascript" src="https://www.google.com/jsapi"></script>    
+    <!-- <script type="text/javascript" src="https://www.google.com/jsapi"></script> -->
     
     
     <!-- 
