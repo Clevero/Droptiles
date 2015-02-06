@@ -49,7 +49,7 @@
                             
 
                             <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-white icon-tint"></i>Theme<b class="caret"></b></a>
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-white icon-tint"></i>Themes<b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     <li><a href="#" onclick="ui.switchTheme('theme-green')">Green</a></li>
                                     <li><a href="#" onclick="ui.switchTheme('theme-white')">White</a></li>
