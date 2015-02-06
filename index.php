@@ -34,7 +34,7 @@
                     <div class="nav-collapse collapse">
                         <ul class="nav">
                             <li class="active">                                
-                                <a class="brand" href="?"><img src="img/avatar474_2.gif" style="max-height: 20px; margin-top: -2px; margin-right:5px; vertical-align: middle" />meineCloud.me</a>
+                                <a class="brand" href="?"><img src="/droptiles/cloud.png" style="max-height: 24px; margin-top: -2px; margin-right:5px; vertical-align: middle" />meineCloud.me</a>
                             </li>
                             <li><a class="active" href="?"><i class="icon-white icon-th-large"></i>Home</a></li>
 
