@@ -12,9 +12,8 @@ window.DefaultTiles = [
 	   { id: "catapi", name: "catapi" },
 	   { id: "owncloud", name: "owncloud" },
            { id: "newsreader", name: "newsreader" },
-           { id: "settings", name: "settings" },
-           { id: "proxy", name: "proxy" },
-           { id: "phpmyadmin", name: "phpmyadmin" },       
+           { id: "kanboard", name: "kanboard" },
+           { id: "proxy", name: "proxy" }
         ]
     }
 ];
@@ -44,16 +43,17 @@ window.TileBuilders = {
         };
     },
 
-   phpmyadmin: function (uniqueId) {
+   kanboard: function (uniqueId) {
        return {
             uniqueId: uniqueId,
-            name: "phpmyadmin",
-            tileImage: "img/phpMyAdmin.png",
+            name: "kanboard",
+            tileImage: "/droptiles/kanboard.svg",
             label: "",
             size: "",
-            color: "bg-color-darken",
-            appIcon: "img/phpMyAdmin.png",
-            appUrl: "https://phpmyadmin.meinecloud.me"
+            color: "bg-color-white",
+            appIcon: "/droptiles/kanboard.svg",
+            appUrl: "http://meinecloud.me/kanboard",
+	    appInNewWindow: true
         };
     },
 
