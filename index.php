@@ -40,8 +40,8 @@
 
 
                             <li>
-                                <form id="googleForm" class="navbar-search pull-left" action="http://duckduckgo.com/search" target="_blank">
-                                    <input id="googleSearchText" type="text" class="search-query span2" name="q" placeholder="Google">
+                                <form id="googleForm" class="navbar-search pull-left" action="http://duckduckgo.com/" target="_blank">
+                                    <input id="googleSearchText" type="text" class="search-query span2" name="q" placeholder="DuckDuckGo">
                                 </form>
                             </li>
                         </ul>
