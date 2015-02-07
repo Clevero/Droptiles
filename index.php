@@ -10,7 +10,7 @@
     
     <title>meineCloud.me - Dashboard</title>
 
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="cloud.ico" type="image/x-icon">
 
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/droptiles.css?v=14">
@@ -53,7 +53,9 @@
                                 <ul class="dropdown-menu">
                                     <li><a href="#" onclick="ui.switchTheme('theme-green')">Green</a></li>
                                     <li><a href="#" onclick="ui.switchTheme('theme-white')">White</a></li>
-                                    <li><a href="#" onclick="ui.switchTheme('theme-Modern')">Modern</a></li>                                    
+                                    <li><a href="#" onclick="ui.switchTheme('theme-Modern')">Modern</a></li>
+				    <li><a href="#" onclick="ui.switchTheme('theme-Forest')">Forest</a></li>
+				    <li><a href="#" onclick="ui.switchTheme('theme-Flower')">Flower</a></li>                                    
                                 </ul>
                             </li>                            
 
