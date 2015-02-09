@@ -13,7 +13,8 @@ window.DefaultTiles = [
 	   { id: "owncloud", name: "owncloud" },
            { id: "newsreader", name: "newsreader" },
            { id: "kanboard", name: "kanboard" },
-           { id: "proxy", name: "proxy" }
+           { id: "proxy", name: "proxy" },
+	   //{ id: "soundcloud", name: "soundcloud" }
         ]
     }
 ];
@@ -43,6 +44,16 @@ window.TileBuilders = {
         };
     },
 
+   soundcloud: function (uniqueId) {
+       return {
+            uniqueId: uniqueId,
+            name: "soundcloud",
+            size: "tile-double tile-double-vertical",
+            color: "bg-color-blueOwncloud",
+	    slidesFrom: ["http://meinecloud.me/test.html"],
+        };
+    },
+
    kanboard: function (uniqueId) {
        return {
             uniqueId: uniqueId,
@@ -61,12 +72,12 @@ window.TileBuilders = {
        return {
             uniqueId: uniqueId,
             name: "proxy",
-            tileImage: "img/internet.png",
-            label: "miniProxy",
+            tileImage: "/droptiles/globus.png",
+            label: "PHP-Proxy",
             size: "",
             color: "bg-color-darken",
-            appIcon: "img/internet.png",
-            appUrl: "http://proxy.meinecloud.me"
+            appIcon: "/droptiles/globus.png",
+            appUrl: "http://meinecloud.me/php-proxy"
         };
     },
 
