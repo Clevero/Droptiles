@@ -4,6 +4,10 @@
     Original inspiration for Metro UI in HTML and CSS came from: http://metroui.org.ua/
 */
 
+.test{
+	background-image:url("http://meinecloud.me/droptiles/cloud.ico");
+}
+
 article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{display:block;}
 audio,canvas,video{display:inline-block;*display:inline;*zoom:1;}
 audio:not([controls]){display:none;}
@@ -575,7 +579,7 @@ border: 1px solid #AAAAAA;
 }
 
 .theme-Forest {
-        background: url(/droptiles/forest.jpg) no-repeat center center fixed;
+        background: url(/droptiles/img/wallpapers/forest.jpg) no-repeat center center fixed;
         -webkit-background-size: cover; 
         -moz-background-size: cover;
         -o-background-size: cover;  
@@ -583,7 +587,7 @@ border: 1px solid #AAAAAA;
 }
 
 .theme-Flower {
-        background: url(/droptiles/flower.jpg) no-repeat center center fixed;
+        background: url(/droptiles/img/wallpapers/flower.jpg) no-repeat center center fixed;
         -webkit-background-size: cover; 
         -moz-background-size: cover;
         -o-background-size: cover;  
