@@ -85,7 +85,7 @@ window.TileBuilders = {
        return {
             uniqueId: uniqueId,
             name: "catapi",
-            tileImage: "http://thecatapi.com/api/images/get?format=src&type=gif",
+            tileImage: "http://thecatapi.com/api/images/get?format=src&type=gif&category=caturday",
             label: "TheCatAPI.com !",
             size: "tile-quadro tile-double-vertical",
             color: "bg-color-darken",
