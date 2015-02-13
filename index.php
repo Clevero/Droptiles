@@ -73,7 +73,7 @@ window.location = 'http://meinecloud.me';
                             </li>
 
 				<li>
-                                <a class="active"><img src="/droptiles/cloud.ico" width="16" height="16"></img> About</a>
+                                <a class="active"><img src="/droptiles/img/info.png" width="24" height="24"></img>About</a>
                             </li>
                             
 
