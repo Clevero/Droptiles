@@ -570,14 +570,6 @@ border: 1px solid #AAAAAA;
         color: black;
     }
 
-.theme-Modern {
-	background: url(/droptiles/bild.jpg) no-repeat center center fixed;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
-}
-
 .theme-Forest {
         background: url(/droptiles/img/wallpapers/forest.jpg) no-repeat center center fixed;
         -webkit-background-size: cover; 
