@@ -14,7 +14,7 @@ window.DefaultTiles = [
            { id: "newsreader", name: "newsreader" },
            { id: "kanboard", name: "kanboard" },
            { id: "proxy", name: "proxy" },
-	   //{ id: "soundcloud", name: "soundcloud" }
+	   { id: "testTile", name: "testTile" }
         ]
     }
 ];
@@ -41,6 +41,15 @@ window.TileBuilders = {
             color: "bg-color-blueOwncloud",
             appIcon: "img/cloud.png",
             appUrl: "https://owncloud.meinecloud.me"
+        };
+    },
+
+   testTile: function (uniqueId) {
+       return {
+            uniqueId: uniqueId,
+            name: "testTile",
+            size: "",
+	    slidesFrom: ["/droptiles/tiles/test.html"]
         };
     },
 
