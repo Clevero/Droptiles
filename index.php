@@ -41,7 +41,7 @@
         type: 'warning',
         showCancelButton: true,
         confirmButtonColor: '#DD6B55',    
-        confirmButtonText: 'OK, verlassen!',
+        confirmButtonText: 'OK, VERLASSEN!',
 	cancelButtonText: 'ABBRECHEN',
         closeOnConfirm: false 
 }, 
