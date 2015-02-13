@@ -50,7 +50,7 @@ window.location = 'http://meinecloud.me';
 });"><img src="/droptiles/img/cloud.png" style="max-height: 24px; margin-top: -2px; margin-right:5px; vertical-align: middle" />meineCloud.me</a>
                             </li>
                             <li>
-				<a class="active" href="/droptiles"><img src="/droptiles/img/dashboard.png"></img> Home</a>
+				<a class="active" href="/droptiles"><img src="/droptiles/img/dashboard.png"></img> Dashboard</a>
 			    </li>
 
                             <li>
