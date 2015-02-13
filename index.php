@@ -67,7 +67,6 @@ window.location = 'http://meinecloud.me';
                                 <ul class="dropdown-menu">
                                     <li><a href="#" onclick="ui.switchTheme('theme-green')">Green</a></li>
                                     <li><a href="#" onclick="ui.switchTheme('theme-white')">White</a></li>
-                                    <li><a href="#" onclick="ui.switchTheme('theme-Modern')">Modern</a></li>
 				    <li><a href="#" onclick="ui.switchTheme('theme-Forest')">Forest</a></li>
 				    <li><a href="#" onclick="ui.switchTheme('theme-Flower')">Flower</a></li>                                    
                                 </ul>
