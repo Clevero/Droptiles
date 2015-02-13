@@ -51,7 +51,6 @@ var ui = {
     anon_last_name: 'Anonymous',
     anon_photo: 'img/User No-Frame.png',
 
-    settings_page: "ServerStuff/Settings.aspx",
 
     appRunning: false,
     currentApp: "",
