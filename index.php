@@ -14,6 +14,7 @@
 
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/droptiles.css?v=14">
+    <link rel="stylesheet" type="text/css" href="js/sweetalert/lib/sweet-alert.css">
     
     <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
@@ -34,10 +35,23 @@
                     <div class="nav-collapse collapse">
                         <ul class="nav">
                             <li class="active">                                
-                                <a class="brand" href="?"><img src="/droptiles/cloud.png" style="max-height: 24px; margin-top: -2px; margin-right:5px; vertical-align: middle" />meineCloud.me</a>
+                                <a class="brand" onclick="swal({
+        title: 'Dasboard verlassen?',
+        text: 'Mit klick auf OK verlässt du das Dashboard und wirst auf meinecloud.me weitergeleitet!', 
+        type: 'warning',
+        showCancelButton: true,
+        confirmButtonColor: '#DD6B55',    
+        confirmButtonText: 'OK, verlassen!',
+	cancelButtonText: 'ABBRECHEN',
+        closeOnConfirm: false 
+}, 
+function(){
+window.location = 'http://meinecloud.me';
+});"><img src="/droptiles/cloud.png" style="max-height: 24px; margin-top: -2px; margin-right:5px; vertical-align: middle" />meineCloud.me</a>
                             </li>
-                            <li><a class="active" href="?"><i class="icon-white icon-th-large"></i> Home</a></li>
-
+                            <li>
+				<a class="active" href="/droptiles"><i class="icon-white icon-th-large"></i> Home</a>
+			    </li>
 
                             <li>
                                 <form id="googleForm" class="navbar-search pull-left" action="http://duckduckgo.com/" target="_blank">
@@ -57,7 +71,12 @@
 				    <li><a href="#" onclick="ui.switchTheme('theme-Forest')">Forest</a></li>
 				    <li><a href="#" onclick="ui.switchTheme('theme-Flower')">Flower</a></li>                                    
                                 </ul>
-                            </li>                            
+                            </li>
+
+				<li>
+                                <a class="active"><img src="/droptiles/cloud.ico" width="16" height="16"></img> About</a>
+                            </li>
+                            
 
                         </ul>
                     </div>
@@ -151,6 +170,7 @@
 <script type="text/javascript" src="js/Underscore.js"></script>
 <script type="text/javascript" src="js/jQuery.hashchange.js"></script>
 <script type="text/javascript" src="js/jquery.ui.touch-punch.min.js"></script>
+<script src="js/sweetalert/lib/sweet-alert.min.js"></script>
 
 <script type="text/javascript" src="js/User.js"></script>
     
