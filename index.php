@@ -10,7 +10,7 @@
     
     <title>meineCloud.me - Dashboard</title>
 
-    <link rel="icon" href="cloud.ico" type="image/x-icon">
+    <link rel="icon" href="/droptiles/img/favicon.ico" type="image/x-icon">
 
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/droptiles.css?v=14">
@@ -47,7 +47,7 @@
 }, 
 function(){
 window.location = 'http://meinecloud.me';
-});"><img src="/droptiles/cloud.png" style="max-height: 24px; margin-top: -2px; margin-right:5px; vertical-align: middle" />meineCloud.me</a>
+});"><img src="/droptiles/img/cloud.png" style="max-height: 24px; margin-top: -2px; margin-right:5px; vertical-align: middle" />meineCloud.me</a>
                             </li>
                             <li>
 				<a class="active" href="/droptiles"><i class="icon-white icon-th-large"></i> Home</a>

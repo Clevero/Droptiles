@@ -81,7 +81,7 @@ window.TileBuilders = {
        return {
             uniqueId: uniqueId,
             name: "proxy",
-            tileImage: "/droptiles/globus.png",
+            tileImage: "/droptiles/img/globus.png",
             label: "PHP-Proxy",
             size: "",
             color: "bg-color-darken",
