@@ -35,7 +35,7 @@
                     <div class="nav-collapse collapse">
                         <ul class="nav">
                             <li class="active">                                
-                                <a class="brand" onclick="swal({
+                                <a class="brand" style="cursor:grab" onclick="swal({
         title: 'Dasboard verlassen?',
         text: 'Mit klick auf OK verlässt du das Dashboard und wirst auf meinecloud.me weitergeleitet!', 
         type: 'warning',
