@@ -49,6 +49,7 @@ window.TileBuilders = {
             uniqueId: uniqueId,
             name: "testTile",
             size: "tile-double",
+	    color: "bg-color-darken",
 	    slidesFrom: ["/droptiles/tiles/iframe.html"]
         };
     },
