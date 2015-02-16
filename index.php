@@ -35,7 +35,7 @@
                     <div class="nav-collapse collapse">
                         <ul class="nav">
                             <li class="active">                                
-                                <a class="brand" style="cursor:grab" onclick="swal({
+                                <a class="brand" style="cursor:pointer" onclick="swal({
         title: 'Dasboard verlassen?',
         text: 'Mit klick auf OK verlässt du das Dashboard und wirst auf meinecloud.me weitergeleitet!', 
         type: 'warning',
@@ -73,7 +73,7 @@ window.location = 'http://meinecloud.me';
                             </li>
 
 				<li>
-                                <a class="active" style="cursor:grab" onclick="sweetAlert('work in progress', 'Die Seite wird demnächst folgen und steht deshalb noch nicht zur Verfügung.', 'error');"><img src="/droptiles/img/info.png" width="24" height="24"></img> About</a>
+                                <a class="active" style="cursor:pointer" onclick="sweetAlert('work in progress', 'Die Seite wird demnächst folgen und steht deshalb noch nicht zur Verfügung.', 'error');"><img src="/droptiles/img/info.png" width="24" height="24"></img> About</a>
                             </li>
                             
 
