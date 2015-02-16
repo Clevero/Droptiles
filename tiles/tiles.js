@@ -48,8 +48,8 @@ window.TileBuilders = {
        return {
             uniqueId: uniqueId,
             name: "testTile",
-            size: "",
-	    slidesFrom: ["/droptiles/tiles/test.html"]
+            size: "tile-double",
+	    slidesFrom: ["/droptiles/tiles/iframe.html"]
         };
     },
 
