@@ -14,7 +14,7 @@ window.DefaultTiles = [
            { id: "newsreader", name: "newsreader" },
            { id: "kanboard", name: "kanboard" },
            { id: "proxy", name: "proxy" },
-	   { id: "testTile", name: "testTile" }
+	   { id: "catAPI2", name: "catAPI2" }
         ]
     }
 ];
@@ -44,13 +44,13 @@ window.TileBuilders = {
         };
     },
 
-   testTile: function (uniqueId) {
+   catAPI2: function (uniqueId) {
        return {
             uniqueId: uniqueId,
-            name: "testTile",
+            name: "catAPI2",
             size: "tile-double",
 	    color: "bg-color-darken",
-	    slidesFrom: ["/droptiles/tiles/iframe.html"]
+	    slidesFrom: ["/droptiles/tiles/catapi2/catapi2.html"]
         };
     },
 
