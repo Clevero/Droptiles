@@ -68,7 +68,7 @@ window.TileBuilders = {
        return {
             uniqueId: uniqueId,
             name: "kanboard",
-            tileImage: "/droptiles/kanboard.svg",
+            tileImage: "/droptiles/img/kanboard.svg",
             label: "",
             size: "",
             color: "bg-color-white",
