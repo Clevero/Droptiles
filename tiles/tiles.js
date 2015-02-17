@@ -72,7 +72,7 @@ window.TileBuilders = {
             label: "",
             size: "",
             color: "bg-color-white",
-            appIcon: "/droptiles/kanboard.svg",
+            appIcon: "/droptiles/img/kanboard.svg",
             appUrl: "http://meinecloud.me/kanboard",
 	    appInNewWindow: true
         };
