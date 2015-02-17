@@ -35,7 +35,7 @@ window.TileBuilders = {
        return {
             uniqueId: uniqueId,
             name: "owncloud",
-            tileImage: "img/cloud.png",
+            tileImage: "img/ownCloud.png",
             label: "ownCloud",
             size: "",
             color: "bg-color-blueOwncloud",
