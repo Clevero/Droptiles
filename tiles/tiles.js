@@ -95,7 +95,7 @@ window.TileBuilders = {
        return {
             uniqueId: uniqueId,
             name: "catapi",
-            tileImage: "http://thecatapi.com/api/images/get?format=src&type=gif&category=caturday",
+            tileImage: "http://thecatapi.com/api/images/get?format=src&category=caturday&size=small&",
             label: "TheCatAPI.com !",
             size: "tile-double",
             color: "bg-color-darken",
@@ -120,9 +120,9 @@ window.TileBuilders = {
        return {
             uniqueId: uniqueId,
             name: "TT-RSS",
-            tileImage: "img/newsReader.png",
+            tileImage: "img/rss.png",
             label: "",
-	    color: "bg-color-white",
+	    color: "bg-color-orange",
             size: "",
             appIcon: "img/newsReader.png",
             appUrl: "https://tt-rss.meinecloud.me",
