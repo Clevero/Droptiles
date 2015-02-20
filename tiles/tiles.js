@@ -82,11 +82,11 @@ window.TileBuilders = {
        return {
             uniqueId: uniqueId,
             name: "proxy",
-            tileImage: "/droptiles/img/globus.png",
+            tileImage: "/droptiles/img/globus_256px.png",
             label: "PHP-Proxy",
             size: "",
             color: "bg-color-darken",
-            appIcon: "/droptiles/img/globus.png",
+            appIcon: "/droptiles/img/globus256px.png",
             appUrl: "http://meinecloud.me/php-proxy"
         };
     },
