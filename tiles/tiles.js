@@ -35,11 +35,11 @@ window.TileBuilders = {
        return {
             uniqueId: uniqueId,
             name: "owncloud",
-            tileImage: "img/ownCloud.png",
+            tileImage: "img/ownCloud_256px.png",
             label: "ownCloud",
             size: "",
             color: "bg-color-blueOwncloud",
-            appIcon: "img/cloud.png",
+            appIcon: "img/cloud_256px.png",
             appUrl: "https://owncloud.meinecloud.me"
         };
     },
