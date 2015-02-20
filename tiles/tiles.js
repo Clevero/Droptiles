@@ -86,7 +86,7 @@ window.TileBuilders = {
             label: "PHP-Proxy",
             size: "",
             color: "bg-color-darken",
-            appIcon: "/droptiles/globus.png",
+            appIcon: "/droptiles/img/globus.png",
             appUrl: "http://meinecloud.me/php-proxy"
         };
     },
