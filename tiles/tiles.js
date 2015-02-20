@@ -120,11 +120,11 @@ window.TileBuilders = {
        return {
             uniqueId: uniqueId,
             name: "TT-RSS",
-            tileImage: "img/rss.png",
+            tileImage: "img/rss_256px.png",
             label: "",
 	    color: "bg-color-orange",
             size: "",
-            appIcon: "img/newsReader.png",
+            appIcon: "img/rss_256px.png",
             appUrl: "https://tt-rss.meinecloud.me",
         };
     },
