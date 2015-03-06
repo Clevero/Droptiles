@@ -11,7 +11,7 @@ function changeBackgroundImageNG() {
 		document.cookie="background-image=NG-pl";
         	var body = document.getElementsByTagName('body')[0];
         	//getTime() is important the we make every time, the functions ist execute, a individual request. otherwise the "new" image loads from the cache
-        	var nextUrl = "http://meinecloud.me/droptiles-beta/img/wallpapers/featured/ng_daily_image.jpg?" + new Date().getTime();
+        	var nextUrl = "http://meinecloud.me/droptiles-beta/plugins/ng/national-geographic-photo-of-the-day/ng_daily_image.jpg?" + new Date().getTime();
         	body.style.backgroundImage = 'url(' + nextUrl + ')';
 	}//ende if
 }//end changeGeographicImage()
