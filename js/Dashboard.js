@@ -517,13 +517,29 @@ var ui = {
     },
 
     switchTheme: function (themename) {
+	//get all classes of the body
         var classes = $("body").prop("class").split(" ");
+	//foreach loop
         _.each(classes, function (c) {
+		//if we have our background class, we would like to remove it
             if (_.string.startsWith(c, 'theme-'))
                 $("body").removeClass(c);
         });
 
-        $("body").addClass(themename);
+	var res = themename.substring(6, themename.length);
+
+	//right up here, we can set the new background-name in a cookie
+	//document.cookie="background-image=" + res;
+
+	//if we have a plugin background, then we should execute his changeBackgroundImage() function
+	if(endsWith(themename, "pl")){
+		if(res.substring(0, 2) === "NG"){
+			changeBackgroundImageNG();
+		}
+	}//end if
+	else{
+		$("body").addClass(themename);
+	}//end else
     },
 
     reload: function () {

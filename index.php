@@ -19,6 +19,8 @@
     <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
     <script src="js/html5.js"></script> <!-- from http://html5shim.googlecode.com/svn/trunk/html5.js -->
+	<script src="plugins/ng/ng.js"></script>
+	<script src="js/meinecloud.me.js"></script>
     <![endif]-->
     
     
@@ -68,7 +70,8 @@ window.location = 'http://meinecloud.me';
                                     <li><a href="#" onclick="ui.switchTheme('theme-moos')">Moos</a></li>
                                     <li><a href="#" onclick="ui.switchTheme('theme-white')">White</a></li>
 				    <li><a href="#" onclick="ui.switchTheme('theme-Forest')">Forest</a></li>
-				    <li><a href="#" onclick="ui.switchTheme('theme-Flower')">Flower</a></li>                                    
+				    <li><a href="#" onclick="ui.switchTheme('theme-Flower')">Flower</a></li>
+				    <li><a href="#" onclick="ui.switchTheme('theme-NG-pl')"><img src="/droptiles-beta/img/national_geographic_64x19px.png"></img></a></li>
                                 </ul>
                             </li>
 
