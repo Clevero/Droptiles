@@ -1,6 +1,6 @@
 [submodule "js/sweetalert"]
 	path = js/sweetalert
 	url = https://github.com/t4t5/sweetalert.git
-[submodule "scripts/--force"]
-	path = scripts/--force
+[submodule "plugins/ng/national-geographic-photo-of-the-day"]
+	path = plugins/ng/national-geographic-photo-of-the-day
 	url = https://github.com/Clevero/national-geographic-photo-of-the-day.git
