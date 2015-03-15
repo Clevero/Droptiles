@@ -68,6 +68,21 @@ var ui = {
         });
     },
 
+	loadBackground: function () {
+		//add content
+		//wenn uns "" zurückgeliefert wird, dann ist das cookie nicht gesetzt. wir setzen also den default
+		if(getCookie("background-image") != ""){
+        		ui.switchTheme( getCookie("background-image") );
+        		//alert("Cookie war schon gesetzt");
+        		//alert(getCookie("background-image"));
+		}//ende if
+		else{
+        		ui.switchTheme('theme-moos');
+        		//alert("Theme war nicht gesetzt");
+		}//ende elese
+		//alert("test");
+    },
+
     /*
         Attach the Tile DIV to a single Tile object and provide all the UI behaviors
         like click, mouse over etc.
@@ -517,13 +532,14 @@ var ui = {
     },
 
     switchTheme: function (themename) {
+	//alert("test");
 	//get all classes of the body
         var classes = $("body").prop("class").split(" ");
 	//foreach loop
         _.each(classes, function (c) {
 		//if we have our background class, we would like to remove it
             if (_.string.startsWith(c, 'theme-'))
-                $("body").removeClass(c);
+                $("body").removeClass(c); //remove old background class
         });
 
 	var res = themename.substring(6, themename.length);
@@ -534,11 +550,17 @@ var ui = {
 	//if we have a plugin background, then we should execute his changeBackgroundImage() function
 	if(endsWith(themename, "pl")){
 		if(res.substring(0, 2) === "NG"){
-			changeBackgroundImageNG();
-		}
+			//changeBackgroundImageNG();
+			$("body").addClass("theme-NG-pl");
+			document.cookie="background-image=theme-NG-pl";
+		}// ende if
 	}//end if
 	else{
+		//kein pl
+		//alert("kein pl");
+		//alert(themename);
 		$("body").addClass(themename);
+		document.cookie="background-image=" + themename;
 	}//end else
     },
 
@@ -580,6 +602,8 @@ $(document).ready(function () {
         ui.attachTiles();
         ui.animateTiles();        
     });
+
+	ui.loadBackground();
 
     // If we have the "add" cookie, then it means user went to app store
     // and then added some apps. The name of the apps are passed as a 

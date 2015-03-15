@@ -571,7 +571,15 @@ border: 1px solid #AAAAAA;
     }
 
 .theme-Forest {
-        background: url(/droptiles/img/wallpapers/forest.jpg) no-repeat center center fixed;
+        background: url("/droptiles/img/wallpapers/forest.jpg") no-repeat center center fixed;
+        -webkit-background-size: cover; 
+        -moz-background-size: cover;
+        -o-background-size: cover;  
+        background-size: cover;
+}
+
+.theme-NG-pl {
+        background: url("http://meinecloud.me/droptiles-beta/plugins/ng/national-geographic-photo-of-the-day/ng_daily_image.jpg?1426337429413") no-repeat center center fixed;
         -webkit-background-size: cover; 
         -moz-background-size: cover;
         -o-background-size: cover;  

@@ -48,6 +48,7 @@ window.TileBuilders = {
        return {
             uniqueId: uniqueId,
             name: "catAPI2",
+	    tile_icon_src: 'https://cdn2.iconfinder.com/data/icons/windows-8-metro-style/512/cat.png',
             size: "tile-double",
 	    color: "bg-color-darken",
 	    slidesFrom: ["/droptiles/tiles/catapi2/catapi2.html"]
@@ -97,9 +98,10 @@ window.TileBuilders = {
             name: "catapi",
             tileImage: "http://thecatapi.com/api/images/get?format=src&category=caturday&size=small&",
             label: "TheCatAPI.com !",
+	    tile_icon_src: 'https://cdn2.iconfinder.com/data/icons/windows-8-metro-style/512/cat.png',
             size: "tile-double",
             color: "bg-color-darken",
-            appIcon: "",
+            appIcon: "https://cdn2.iconfinder.com/data/icons/windows-8-metro-style/512/cat.png",
             appUrl: "http://meinecloud.me/droptiles"
         };
     },
