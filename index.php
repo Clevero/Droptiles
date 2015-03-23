@@ -71,6 +71,8 @@ window.location = 'http://meinecloud.me';
                                     <li><a href="#" onclick="ui.switchTheme('theme-white')">White</a></li>
 				    <li><a href="#" onclick="ui.switchTheme('theme-Forest')">Forest</a></li>
 				    <li><a href="#" onclick="ui.switchTheme('theme-Flower')">Flower</a></li>
+					<li><a href="http://akk.li/pics/anne.jpg">#Caturday</a></li>
+				    <li><a href="#" onclick="ui.switchTheme('theme-NASA-pl')"><img src="/droptiles/img/nasa_32x26px.png"></img></a></li>
 				    <li><a href="#" onclick="ui.switchTheme('theme-NG-pl')"><img src="/droptiles-beta/img/national_geographic_64x19px.png"></img></a></li>
                                 </ul>
                             </li>
