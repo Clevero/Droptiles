@@ -80,7 +80,6 @@ var ui = {
         		ui.switchTheme('theme-moos');
         		//alert("Theme war nicht gesetzt");
 		}//ende elese
-		//alert("test");
     },
 
     /*
@@ -532,7 +531,6 @@ var ui = {
     },
 
     switchTheme: function (themename) {
-	//alert("test");
 	//get all classes of the body
         var classes = $("body").prop("class").split(" ");
 	//foreach loop
@@ -554,6 +552,13 @@ var ui = {
 			$("body").addClass("theme-NG-pl");
 			document.cookie="background-image=theme-NG-pl";
 		}// ende if
+		else if(res.substring(0, 4) === "NASA"){
+			$("body").addClass("theme-NASA-pl");
+			document.cookie="background-image=theme-NASA-pl";
+		}
+		else{
+			//alert(res.substring(0, 4));
+		}
 	}//end if
 	else{
 		//kein pl
