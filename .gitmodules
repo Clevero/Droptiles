@@ -4,3 +4,9 @@
 [submodule "plugins/ng/national-geographic-photo-of-the-day"]
 	path = plugins/ng/national-geographic-photo-of-the-day
 	url = https://github.com/Clevero/national-geographic-photo-of-the-day.git
+[submodule "plugins/nasa/64d900721448875bde82"]
+	path = plugins/nasa/64d900721448875bde82
+	url = https://gist.github.com/64d900721448875bde82.git
+[submodule "scripts/nasa/64d900721448875bde82"]
+	path = scripts/nasa/64d900721448875bde82
+	url = https://gist.github.com/64d900721448875bde82.git
