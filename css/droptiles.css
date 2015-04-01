@@ -587,7 +587,7 @@ border: 1px solid #AAAAAA;
 }
 
 .theme-NG-pl {
-        background: url("http://meinecloud.me/droptiles-beta/plugins/ng/national-geographic-photo-of-the-day/ng_daily_image.jpg?1426337429413") no-repeat center center fixed;
+        background: url("http://meinecloud.me/droptiles-beta/plugins/ng/national-geographic-photo-of-the-day/ng_daily_image.jpg?") no-repeat center center fixed;
         -webkit-background-size: cover; 
         -moz-background-size: cover;
         -o-background-size: cover;  
@@ -595,7 +595,7 @@ border: 1px solid #AAAAAA;
 }
 
 .theme-NASA-pl{
-	background: url("http://meinecloud.me/droptiles/scripts/nasa/64d900721448875bde82/nasa_picture_of_the_day_apod.jpg") no-repeat center center fixed;
+	background: url("http://meinecloud.me/droptiles/scripts/nasa/64d900721448875bde82/nasa_picture_of_the_day_apod.jpg?") no-repeat center center fixed;
         -webkit-background-size: cover; 
         -moz-background-size: cover;
         -o-background-size: cover;  
