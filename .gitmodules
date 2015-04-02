@@ -13,3 +13,6 @@
 [submodule "js/alertify.js"]
 	path = js/alertify.js
 	url = https://github.com/alertifyjs/alertify.js.git
+[submodule "js/select"]
+	path = js/select
+	url = https://github.com/HubSpot/select.git
