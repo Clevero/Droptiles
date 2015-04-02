@@ -78,7 +78,7 @@ var ui = {
 		}//ende if
 		else{
         		ui.switchTheme('theme-moos');
-        		//alert("Theme war nicht gesetzt");
+			alertify.log("Customize your Droptiles by selecting your favorite Theme!");
 		}//ende elese
     },
 
