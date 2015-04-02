@@ -14,7 +14,7 @@ window.DefaultTiles = [
            { id: "newsreader", name: "newsreader" },
            { id: "kanboard", name: "kanboard" },
            { id: "proxy", name: "proxy" },
-	   { id: "catAPI2", name: "catAPI2" }
+	   //{ id: "catAPI2", name: "catAPI2" }
         ]
     }
 ];
