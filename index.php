@@ -33,7 +33,7 @@
         
     
 </head>
-<body>
+<body style="overflow: hidden;">
     
     <div id="body" class="unselectable">
         <div id="navbar" class="navbar navbar-fixed-top navbar-inverse">
@@ -46,6 +46,7 @@
         title: 'Dasboard verlassen?',
         text: 'Mit klick auf OK verlässt du das Dashboard und wirst auf meinecloud.me weitergeleitet!', 
         type: 'warning',
+	html: true,
         showCancelButton: true,
         confirmButtonColor: '#DD6B55',    
         confirmButtonText: 'OK, VERLASSEN!',
@@ -72,13 +73,13 @@ window.location = 'http://meinecloud.me';
                             <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-white icon-tint"></i>Themes<b class="caret"></b></a>
                                 <ul class="dropdown-menu">
-                                    <li><a href="#" onclick="ui.switchTheme('theme-moos')">Moos</a></li>
-                                    <li><a href="#" onclick="ui.switchTheme('theme-white')">White</a></li>
-				    <li><a href="#" onclick="ui.switchTheme('theme-Forest')">Forest</a></li>
-				    <li><a href="#" onclick="ui.switchTheme('theme-Flower')">Flower</a></li>
+                                    <li><a href="#" onclick="ui.switchTheme('theme-moos', true)">Moos</a></li>
+                                    <li><a href="#" onclick="ui.switchTheme('theme-white', true)">White</a></li>
+				    <li><a href="#" onclick="ui.switchTheme('theme-Forest', true)">Forest</a></li>
+				    <li><a href="#" onclick="ui.switchTheme('theme-Flower', true)">Flower</a></li>
 					<li><a href="http://akk.li/pics/anne.jpg">#Caturday</a></li>
-				    <li><a href="#" onclick="ui.switchTheme('theme-NASA-pl')"><img src="/droptiles/img/nasa_32x26px.png"></img></a></li>
-				    <li><a href="#" onclick="ui.switchTheme('theme-NG-pl')"><img src="/droptiles-beta/img/national_geographic_64x19px.png"></img></a></li>
+				    <li><a href="#" onclick="ui.switchTheme('theme-NASA-pl', true)"><img src="/droptiles/img/nasa_32x26px.png"></img></a></li>
+				    <li><a href="#" onclick="ui.switchTheme('theme-NG-pl', true)"><img src="/droptiles-beta/img/national_geographic_64x19px.png"></img></a></li>
                                 </ul>
                             </li>
 
