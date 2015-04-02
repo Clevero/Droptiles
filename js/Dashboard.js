@@ -72,12 +72,12 @@ var ui = {
 		//add content
 		//wenn uns "" zurückgeliefert wird, dann ist das cookie nicht gesetzt. wir setzen also den default
 		if(getCookie("background-image") != ""){
-        		ui.switchTheme( getCookie("background-image") );
+        		ui.switchTheme( getCookie("background-image"), false);
         		//alert("Cookie war schon gesetzt");
         		//alert(getCookie("background-image"));
 		}//ende if
 		else{
-        		ui.switchTheme('theme-moos');
+        		ui.switchTheme('theme-moos', false);
 			alertify.log("Customize your Droptiles by selecting your favorite Theme!");
 		}//ende elese
     },
@@ -530,7 +530,7 @@ var ui = {
         });
     },
 
-    switchTheme: function (themename) {
+    switchTheme: function (themename, changed) {
 	//get all classes of the body
         var classes = $("body").prop("class").split(" ");
 	//foreach loop
@@ -545,27 +545,48 @@ var ui = {
 	//right up here, we can set the new background-name in a cookie
 	//document.cookie="background-image=" + res;
 
-	//if we have a plugin background, then we should execute his changeBackgroundImage() function
 	if(endsWith(themename, "pl")){
 		if(res.substring(0, 2) === "NG"){
-			//changeBackgroundImageNG();
 			$("body").addClass("theme-NG-pl");
 			document.cookie="background-image=theme-NG-pl";
+			if(changed == true){
+				alertify.log("Changed Theme to Picture of the Day from National Geographic");
+			}//end if
 		}// ende if
 		else if(res.substring(0, 4) === "NASA"){
 			$("body").addClass("theme-NASA-pl");
 			document.cookie="background-image=theme-NASA-pl";
+			if(changed == true){
+				alertify.log("Changed Theme to NASA's Photo of the Day");
+			}//ende if
 		}
 		else{
 			//alert(res.substring(0, 4));
 		}
 	}//end if
 	else{
-		//kein pl
-		//alert("kein pl");
-		//alert(themename);
-		$("body").addClass(themename);
-		document.cookie="background-image=" + themename;
+		if(res === "white" && changed == true){
+			var zitate_array = [ "<i>\"Was es alles gibt, was ich nicht brauche.</i>\"    -    Aristoteles", 
+						"\"<i>Man soll weder annehmen noch besitzen, was man nicht wirklich zum Leben braucht.</i>\"    -    Mahatma Ghandi", 
+						"\"<i>Arm ist nicht, wer wenig hat, sondern wer viel braucht.</i>\"    -    Peter Rosegger",
+						"\"<i>In deinem Nichts hoff ich, das All zu finden.</i>\"    -    Johann Wolfgang von Goethe",
+						"\"<i>Dies nichts ist mehr als etwas.</i>\"    -    William Shakespeare",
+						"\"<i>Aus dem Nichts läßt sich nichts machen, höchstens ein Weltall.</i>\"    -    Manfred Hinrich",
+						"\"<i>Leere läßt sich füllen, das Nichts hat keine Ränder.</i>\"    -    Manfred Hinrich",
+						"\"<i>Nichts soll zwischen uns sein, ich liebe dieses Nichts.</i>\"    -    Mafred Hinrich"];
+			var random_int = Math.floor((Math.random() * zitate_array.length));
+			alertify.log("Changed Theme to <b>White</b>. <br><br><i>" + zitate_array[random_int] + "</i>");
+			$("body").addClass(themename);
+			document.cookie="background-image=" + themename;
+		}//ende if
+		else{
+			//res = themename.substring(6, themename.length);
+			$("body").addClass(themename);
+			document.cookie="background-image=" + themename;
+			if(changed == true){
+				alertify.log("Changed Theme to " + res);
+			}//ende if
+		}//ende else
 	}//end else
     },
 
