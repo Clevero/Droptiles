@@ -10,3 +10,6 @@
 [submodule "scripts/nasa/64d900721448875bde82"]
 	path = scripts/nasa/64d900721448875bde82
 	url = https://gist.github.com/64d900721448875bde82.git
+[submodule "js/alertify.js"]
+	path = js/alertify.js
+	url = https://github.com/alertifyjs/alertify.js.git

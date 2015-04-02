@@ -15,13 +15,18 @@
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/droptiles.css?v=14">
     <link rel="stylesheet" type="text/css" href="js/sweetalert/lib/sweet-alert.css">
-    
+    <link rel="stylesheet" type="text/css" href="js/alertify.js/src/css/core.css" />
+    <link rel="stylesheet" type="text/css" href="js/alertify.js/src/css/themes/default/default.css" />
+
     <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
+
     <script src="js/html5.js"></script> <!-- from http://html5shim.googlecode.com/svn/trunk/html5.js -->
-	<script src="plugins/ng/ng.js"></script>
-	<script src="js/meinecloud.me.js"></script>
+
     <![endif]-->
+    <script src="plugins/ng/ng.js"></script>
+    <script src="js/meinecloud.me.js"></script>
+    <script src="js/alertify.js/src/js/alertify.js"></script>
     
     
 
