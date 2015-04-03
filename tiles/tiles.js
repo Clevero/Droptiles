@@ -99,7 +99,7 @@ window.TileBuilders = {
             tileImage: "http://thecatapi.com/api/images/get?format=src&category=caturday&size=small&",
             label: "TheCatAPI.com !",
 	    tile_icon_src: 'https://cdn2.iconfinder.com/data/icons/windows-8-metro-style/512/cat.png',
-            size: "tile-double",
+            size: "tile-triple tile-double-vertical",
             color: "bg-color-darken",
             appIcon: "https://cdn2.iconfinder.com/data/icons/windows-8-metro-style/512/cat.png",
             appUrl: "http://meinecloud.me/droptiles"
