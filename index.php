@@ -106,7 +106,7 @@
                             </li>
 
 				<li>
-                                <a class="active" style="cursor:pointer" onclick="sweetAlert('work in progress', 'Die Seite wird demnächst folgen und steht deshalb noch nicht zur Verfügung.', 'error');"><img src="/droptiles/img/info_26px.png" width="24" height="24"></img> About</a>
+           			<a class="active" style="cursor:pointer" onclick="printAbout()"><img src="/droptiles/img/info_26px.png" width="24" height="24"></img> About</a>
                             </li>
                             
 

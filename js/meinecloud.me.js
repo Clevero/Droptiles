@@ -34,3 +34,7 @@ function askBeforeLeft(){
 		}
 	);
 }//ende askBeforeLeft()
+
+function printAbout(){
+	sweetAlert('work in progress', 'Die Seite wird demnächst folgen und steht deshalb noch nicht zur Verfügung.', 'error');
+}//ende printAbout()
