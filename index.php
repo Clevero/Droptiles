@@ -11,7 +11,6 @@
     <title>meineCloud.me - Dashboard</title>
 
     <link rel="icon" href="/droptiles/img/favicon.ico" type="image/x-icon">
-
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/droptiles.css?v=14">
     <link rel="stylesheet" type="text/css" href="js/sweetalert/lib/sweet-alert.css">
@@ -20,21 +19,51 @@
 
     <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
-
-    <script src="js/html5.js"></script> <!-- from http://html5shim.googlecode.com/svn/trunk/html5.js -->
-
+    	<script src="js/html5.js"></script> <!-- from http://html5shim.googlecode.com/svn/trunk/html5.js -->
     <![endif]-->
+
     <script src="plugins/ng/ng.js"></script>
     <script src="js/meinecloud.me.js"></script>
     <script src="js/alertify.js/src/js/alertify.js"></script>
-    
-    
+    <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery-ui-1.10.2.custom.min.js"></script>
+    <script type="text/javascript" src="js/jQueryEnhancement.js"></script>
+    <script type="text/javascript" src="js/jQuery.MouseWheel.js"></script>
+    <script type="text/javascript" src="js/jquery.kinetic.js"></script>
+    <script type="text/javascript" src="js/Knockout-2.1.0.js"></script>
+    <script type="text/javascript" src="js/knockout.sortable.js"></script>
+    <script type="text/javascript" src="js/cookie.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/Underscore.js"></script>
+    <script type="text/javascript" src="js/jQuery.hashchange.js"></script>
+    <script type="text/javascript" src="js/jquery.ui.touch-punch.min.js"></script>
+    <script src="js/sweetalert/lib/sweet-alert.min.js"></script>
+    <script type="text/javascript" src="js/User.js"></script> 
+    <script type="text/javascript" src="js/TheCore.js?v=14"></script>
+    <script type="text/javascript" src="tiles/tiles.js?v=14"></script>
+    <script type="text/javascript" src="js/Dashboard.js?v=14"></script>
+    <script type="text/javascript">
+    	// Bootstrap initialization
+    	$(document).ready(function () {
+        	$('.dropdown-toggle').dropdown();
+    	});
+    </script>
+    <script type="text/javascript">
+    	window.currentUser = new User({
+        	firstName: "None",
+        	lastName: "Anonymous",
+        	photo: "img/User No-Frame.png",
+        	isAnonymous: true
+    	});
+    </script>
+    <script type="text/javascript">
+        window.profileData = null;
+        	$(document).ready(function(){
+            });
+    </script>
 
-        
-    
 </head>
-<body style="overflow: hidden;">
-    
+<body> 
     <div id="body" class="unselectable">
         <div id="navbar" class="navbar navbar-fixed-top navbar-inverse">
             <div class="navbar-inner">
@@ -73,6 +102,12 @@ window.location = 'http://meinecloud.me';
                             <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-white icon-tint"></i>Themes<b class="caret"></b></a>
                                 <ul class="dropdown-menu">
+                                    <li><a href="#" onclick="swal({
+        title: 'GrünerApfel Creative Commons',
+        text: 'Wähle eines seiner Fotos als Hintergrund aus.<br><br><br>', 
+        html: true,
+        showCancelButton: false,
+});">CreativeCommons</a></li>
                                     <li><a href="#" onclick="ui.switchTheme('theme-moos', true)">Moos</a></li>
                                     <li><a href="#" onclick="ui.switchTheme('theme-white', true)">White</a></li>
 				    <li><a href="#" onclick="ui.switchTheme('theme-Forest', true)">Forest</a></li>
@@ -157,74 +192,8 @@ window.location = 'http://meinecloud.me';
         </div>
     </div>
 
-
-
 </body>
-
-    
-    <!-- 
-    If you change any of the below javascript files, make sure you run the Combine.bat
-    file in the /js folder to generate the CombinedDashboard.js file again. And then don't
-    forget to update the ?v=14#. Otherwise user's will have cached copies in their browser
-    and won't get the newly deployed file. -->
-
-<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
-<script type="text/javascript" src="js/jquery-ui-1.10.2.custom.min.js"></script>
-<script type="text/javascript" src="js/jQueryEnhancement.js"></script>
-<script type="text/javascript" src="js/jQuery.MouseWheel.js"></script>
-<script type="text/javascript" src="js/jquery.kinetic.js"></script>
-<script type="text/javascript" src="js/Knockout-2.1.0.js"></script>
-<script type="text/javascript" src="js/knockout.sortable.js"></script>
-<script type="text/javascript" src="js/cookie.js"></script>
-<script type="text/javascript" src="js/bootstrap.min.js"></script>
-<script type="text/javascript" src="js/Underscore.js"></script>
-<script type="text/javascript" src="js/jQuery.hashchange.js"></script>
-<script type="text/javascript" src="js/jquery.ui.touch-punch.min.js"></script>
-<script src="js/sweetalert/lib/sweet-alert.min.js"></script>
-
-<script type="text/javascript" src="js/User.js"></script>
-    
-
-<script type="text/javascript">
-    // Bootstrap initialization
-    $(document).ready(function () {
-        $('.dropdown-toggle').dropdown();        
-    });
-</script>
-        
-
-<script type="text/javascript">
-    window.currentUser = new User({
-        firstName: "None",
-        lastName: "Anonymous",
-        photo: "img/User No-Frame.png",
-        isAnonymous: true
-    });
-</script>
 
     <!-- Copyright 2012 Omar AL Zabir -->
     <!-- <script type="text/javascript" src="https://www.google.com/jsapi"></script> -->
-    
-    
-    <!-- 
-        If you change any of the below javascript files, make sure you run the Combine.bat
-        file in the /js folder to generate the CombinedDashboard.js file again. And then don't
-        forget to update the ?v=14#. Otherwise user's will have cached copies in their browser
-        and won't get the newly deployed file. -->
-    <script type="text/javascript" src="js/TheCore.js?v=14"></script>
-    <script type="text/javascript" src="tiles/tiles.js?v=14"></script>
-    <script type="text/javascript" src="js/Dashboard.js?v=14"></script>
-    
-
-
-    <script type="text/javascript">
-        window.profileData = null;
-
-        $(document).ready(function(){
-            
-            });
-    </script>
-    
-
-    
 </html>
