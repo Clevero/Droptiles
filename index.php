@@ -71,20 +71,7 @@
                     <div class="nav-collapse collapse">
                         <ul class="nav">
                             <li class="active">                                
-                                <a class="brand" style="cursor:pointer" onclick="swal({
-        title: 'Dasboard verlassen?',
-        text: 'Mit klick auf OK verlässt du das Dashboard und wirst auf meinecloud.me weitergeleitet!', 
-        type: 'warning',
-	html: true,
-        showCancelButton: true,
-        confirmButtonColor: '#DD6B55',    
-        confirmButtonText: 'OK, VERLASSEN!',
-	cancelButtonText: 'ABBRECHEN',
-        closeOnConfirm: false 
-}, 
-function(){
-window.location = 'http://meinecloud.me';
-});"><img src="/droptiles/img/cloud_24px.png" style="max-height: 24px; margin-top: -2px; margin-right:5px; vertical-align: middle" />meineCloud.me</a>
+                                <a class="brand" style="cursor:pointer" onclick="askBeforeLeft()"><img src="/droptiles/img/cloud_24px.png" style="max-height: 24px; margin-top: -2px; margin-right:5px; vertical-align: middle" />meineCloud.me</a>
                             </li>
                             <li>
 				<a class="active" href="/droptiles"><img src="/droptiles/img/dashboard_24px.png"></img> Dashboard</a>

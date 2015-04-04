@@ -16,3 +16,21 @@ function getCookie(cname) {
     }
     return "";
 }//ende getCookie()
+
+function askBeforeLeft(){
+	swal({
+        	title: 'Dasboard verlassen?',
+        	text: 'Mit klick auf OK verlässt du das Dashboard und wirst auf meinecloud.me weitergeleitet!', 
+        	type: 'warning',
+        	html: true,
+        	showCancelButton: true,
+        	confirmButtonColor: '#DD6B55',    
+        	confirmButtonText: 'OK, VERLASSEN!',
+        	cancelButtonText: 'ABBRECHEN',
+        	closeOnConfirm: false 
+	}, 
+		function(){
+			window.location = 'http://meinecloud.me';
+		}
+	);
+}//ende askBeforeLeft()
