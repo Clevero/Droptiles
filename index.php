@@ -22,7 +22,6 @@
     	<script src="js/html5.js"></script> <!-- from http://html5shim.googlecode.com/svn/trunk/html5.js -->
     <![endif]-->
 
-    <script src="plugins/ng/ng.js"></script>
     <script src="js/meinecloud.me/m.min.js"></script>
     <script src="js/alertify.js/src/js/alertify.js"></script>
     <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
