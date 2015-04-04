@@ -23,7 +23,7 @@
     <![endif]-->
 
     <script src="plugins/ng/ng.js"></script>
-    <script src="js/meinecloud.me/meinecloud.me.js"></script>
+    <script src="js/meinecloud.me/m.min.js"></script>
     <script src="js/alertify.js/src/js/alertify.js"></script>
     <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
     <script type="text/javascript" src="js/jquery-ui-1.10.2.custom.min.js"></script>
