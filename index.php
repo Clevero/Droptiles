@@ -14,7 +14,7 @@
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/droptiles.css?v=14">
     <link rel="stylesheet" type="text/css" href="js/sweetalert/lib/sweet-alert.css">
-    <link rel="stylesheet" type="text/css" href="js/alertify.js/src/css/core.css" />
+    <link rel="stylesheet" type="text/css" href="js/alertify.js/dist/css/alertify.css" />
     <link rel="stylesheet" type="text/css" href="js/alertify.js/src/css/themes/default/default.css" />
 
     <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
