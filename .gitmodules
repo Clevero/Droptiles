@@ -1,9 +1,6 @@
 [submodule "js/sweetalert"]
 	path = js/sweetalert
 	url = https://github.com/t4t5/sweetalert.git
-[submodule "plugins/nasa/64d900721448875bde82"]
-	path = plugins/nasa/64d900721448875bde82
-	url = https://gist.github.com/64d900721448875bde82.git
 [submodule "scripts/nasa/64d900721448875bde82"]
 	path = scripts/nasa/64d900721448875bde82
 	url = https://gist.github.com/64d900721448875bde82.git
