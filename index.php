@@ -138,13 +138,13 @@
                             <a class="metro-tile-link">                        
                                 <!-- ko if: tileImage -->
                                 <div class="tile-image">
-                                    <img data-bind="attr: { src: tileImage }" src="img/Internet%20Explorer.png" />
+                                    <img data-bind="attr: { src: tileImage }" src="" />
                                 </div>
                                 <!-- /ko -->
                                 <!-- ko if: iconSrc -->
                                 <!-- ko if: slides().length == 0 -->
                                 <div data-bind="attr: { 'class': iconClasses }">
-                                    <img data-bind="attr: { src: iconSrc }" src="img/Internet%20Explorer.png" />
+                                    <img data-bind="attr: { src: iconSrc }" src="" />
                                 </div>
                                 <!-- /ko -->
                                 <!-- /ko -->
