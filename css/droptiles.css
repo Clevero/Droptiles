@@ -377,11 +377,6 @@ html, body {
 
     
 body {
-	background: url(/droptiles/img/wallpapers/moos.jpg) no-repeat center center fixed;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
 	overflow: hidden;
     }
 
@@ -570,6 +565,14 @@ border: 1px solid #AAAAAA;
     .theme-white #start,  .theme-white #name {
         color: black;
     }
+
+.theme-moos{
+	background: url("/droptiles/img/wallpapers/moos.jpg") no-repeat center center fixed;
+        -webkit-background-size: cover; 
+        -moz-background-size: cover;
+        -o-background-size: cover;  
+        background-size: cover;
+}
 
 .theme-Forest {
         background: url("/droptiles/img/wallpapers/forest.jpg") no-repeat center center fixed;
