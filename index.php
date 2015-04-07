@@ -88,12 +88,7 @@
                             <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-white icon-tint"></i>Themes<b class="caret"></b></a>
                                 <ul class="dropdown-menu">
-                                    <li><a href="#" onclick="swal({
-        title: 'GrünerApfel Creative Commons',
-        text: 'Wähle eines seiner Fotos als Hintergrund aus.<br><br><br>', 
-        html: true,
-        showCancelButton: false,
-});">CreativeCommons</a></li>
+                                    <li><a href="#" onclick="ui.printCreativeCommons()">CreativeCommons</a></li>
                                     <li><a href="#" onclick="ui.switchTheme('theme-moos', true)">Moos</a></li>
                                     <li><a href="#" onclick="ui.switchTheme('theme-white', true)">White</a></li>
 				    <li><a href="#" onclick="ui.switchTheme('theme-Forest', true)">Forest</a></li>

@@ -82,6 +82,19 @@ var ui = {
 		}//ende elese
     },
 
+	printCreativeCommons: function(){
+
+        swal({
+                title: 'Creative Commons',
+                text: 'Von welchem Künstler soll welches Bild als Hintergrundbild ausgewählt werden? <br><br><br><p>GrünerApfel</b><select onchange="ui.switchTheme(\'theme-\' + this.value)"><option value="Moos">Moos</option><option value="Forest">Forest</option><option value="Flower">Flower</option></select>',
+                html: true,
+                showCancelButton: false,
+                }
+        );
+
+    },
+
+
     /*
         Attach the Tile DIV to a single Tile object and provide all the UI behaviors
         like click, mouse over etc.
