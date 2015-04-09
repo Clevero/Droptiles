@@ -126,7 +126,7 @@ window.TileBuilders = {
             label: "",
 	    color: "bg-color-rssOrange",
             size: "",
-            appIcon: "img/rss_256px.png",
+            appIcon: "img/rss_512px.png",
             appUrl: "http://meinecloud.me/tt-rss",
         };
     },
