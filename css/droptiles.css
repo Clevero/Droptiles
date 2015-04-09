@@ -43,6 +43,7 @@ textarea{overflow:auto;vertical-align:top;}
 .bg-color-darken{background-color:#1c1c1c !important;}
 .bg-color-white{background-color:#ffffff !important;}
 .bg-color-blueOwncloud{background-color:#35537A !important;}
+.bg-color-blueLight{background-color: #5e889e !important;}
 .bg-color-rssOrange{background-color:#ff9845 !important;}
 .metro *{font-family:Tahoma,Arial,Verdana,sans-serif;font-size:11pt;font-weight:400;color:#ffffff;}
 .metro a:hover,.metro .link:hover{color:#44d1da;}
