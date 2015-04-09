@@ -124,7 +124,7 @@ window.TileBuilders = {
             name: "TT-RSS",
             tileImage: "img/rss_256px.png",
             label: "",
-	    color: "bg-color-orange",
+	    color: "bg-color-rssOrange",
             size: "",
             appIcon: "img/rss_256px.png",
             appUrl: "http://meinecloud.me/tt-rss",
