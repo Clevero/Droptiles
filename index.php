@@ -73,7 +73,7 @@
                                 <a class="brand" style="cursor:pointer" onclick="askBeforeLeft()"><img src="/droptiles/img/cloud_24px.png" style="max-height: 24px; margin-top: -2px; margin-right:5px; vertical-align: middle" />meineCloud.me</a>
                             </li>
                             <li>
-				<a ondblclick="window.location = '/droptiles'" class="active unselectable"><img src="/droptiles/img/dashboard_24px.png"></img> Dashboard</a>
+				<a style="cursor:pointer" ondblclick="window.location = '/droptiles'" class="active unselectable"><img src="/droptiles/img/dashboard_24px.png"></img> Dashboard</a>
 			    </li>
 
                             <li>
