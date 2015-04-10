@@ -70,7 +70,7 @@
                     <div class="nav-collapse collapse">
                         <ul class="nav">
                             <li class="active">                                
-                                <a class="brand" style="cursor:pointer" onclick="askBeforeLeft()"><img src="/droptiles/img/cloud_24px.png" style="max-height: 24px; margin-top: -2px; margin-right:5px; vertical-align: middle" />meineCloud.me</a>
+                                <a class="brand unselectable" style="cursor:pointer" onclick="askBeforeLeft()"><img src="/droptiles/img/cloud_24px.png" style="max-height: 24px; margin-top: -2px; margin-right:5px; vertical-align: middle" />meineCloud.me</a>
                             </li>
                             <li>
 				<a style="cursor:pointer" ondblclick="window.location = '/droptiles'" class="active unselectable"><img src="/droptiles/img/dashboard_24px.png"></img> Dashboard</a>
