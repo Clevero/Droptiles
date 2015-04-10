@@ -1,0 +1,5 @@
+- change website title when launching fullscreen app
+- add "logged in" sign for some tile applications
+- finish creativecommons section in themes selector
+- hide navbar when launching fullscreen app and show navbar when joining the homescreen
+- double click on "Dashboard" to bring the user to homescreen
