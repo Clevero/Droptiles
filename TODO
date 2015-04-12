@@ -2,3 +2,5 @@
 - add "logged in" sign for some tile applications
 - finish creativecommons section in themes selector
 - hide navbar when launching fullscreen app and show navbar when joining the homescreen
+- make blur effect on background
+- doubleclick on background to remove blur effect on background, doubleclick to make blur effect
