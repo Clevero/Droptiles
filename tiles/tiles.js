@@ -40,7 +40,7 @@ window.TileBuilders = {
             size: "",
             color: "bg-color-blueOwncloud",
             appIcon: "img/ownCloud_512px.png",
-            appUrl: "https://owncloud.meinecloud.me"
+            appUrl: "http://meinecloud.me/owncloud"
         };
     },
 
