@@ -88,7 +88,7 @@ window.TileBuilders = {
             size: "",
             color: "bg-color-darken",
             appIcon: "/droptiles/img/globus_512px.png",
-            appUrl: "http://meinecloud.me/php-proxy"
+            appUrl: "http://meinecloud.me/php-proxy-webapp"
         };
     },
 
