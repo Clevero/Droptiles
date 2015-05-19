@@ -14,7 +14,7 @@ window.DefaultTiles = [
            { id: "newsreader", name: "newsreader" },
            { id: "kanboard", name: "kanboard" },
            { id: "proxy", name: "proxy" },
-	   //{ id: "catAPI2", name: "catAPI2" }
+	   { id: "telegram", name: "telegram" }
         ]
     }
 ];
@@ -41,6 +41,20 @@ window.TileBuilders = {
             color: "bg-color-blueOwncloud",
             appIcon: "img/ownCloud_512px.png",
             appUrl: "http://meinecloud.me/owncloud"
+        };
+    },
+
+   telegram: function (uniqueId) {
+       return {
+            uniqueId: uniqueId,
+            name: "telegram",
+            tileImage: "https://cdn2.iconfinder.com/data/icons/social-flat-buttons-3/512/telegram-256.png",
+            label: "Telegram Web",
+            size: "",
+            color: "",
+            appIcon: "https://cdn2.iconfinder.com/data/icons/social-flat-buttons-3/512/telegram-512.png",
+            appUrl: "http://meinecloud.me:8000/app/index.html",
+            appInNewWindow: true
         };
     },
 
