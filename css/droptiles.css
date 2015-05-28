@@ -429,7 +429,7 @@ body {
 #metro-sections-container {
     position: absolute;
     bottom: 40px;
-    top: 115px;
+    top: 90px;
 }
 
 .appnavbar {
@@ -569,7 +569,7 @@ border: 1px solid #AAAAAA;
     }
 
 .theme-moos{
-	background: url("/droptiles/img/wallpapers/moos.jpg") no-repeat center center fixed;
+	background: url("/img/wallpapers/moos.jpg") no-repeat center center fixed;
         -webkit-background-size: cover; 
         -moz-background-size: cover;
         -o-background-size: cover;  
@@ -577,7 +577,7 @@ border: 1px solid #AAAAAA;
 }
 
 .theme-Forest {
-        background: url("/droptiles/img/wallpapers/forest.jpg") no-repeat center center fixed;
+        background: url("/img/wallpapers/forest.jpg") no-repeat center center fixed;
         -webkit-background-size: cover; 
         -moz-background-size: cover;
         -o-background-size: cover;  
@@ -609,7 +609,7 @@ border: 1px solid #AAAAAA;
 }
 
 .theme-Flower {
-        background: url(/droptiles/img/wallpapers/flower.jpg) no-repeat center center fixed;
+        background: url("/img/wallpapers/flower.jpg") no-repeat center center fixed;
         -webkit-background-size: cover; 
         -moz-background-size: cover;
         -o-background-size: cover;  

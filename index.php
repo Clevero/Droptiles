@@ -10,7 +10,7 @@
     
     <title>meineCloud.me - Dashboard</title>
 
-    <link rel="icon" href="/droptiles/img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/droptiles.css?v=14">
     <link rel="stylesheet" type="text/css" href="js/sweetalert/lib/sweet-alert.css">
@@ -70,10 +70,10 @@
                     <div class="nav-collapse collapse">
                         <ul class="nav">
                             <li class="active">                                
-                                <a class="brand unselectable" style="cursor:pointer" onclick="askBeforeLeft()"><img src="/droptiles/img/cloud_24px.png" style="max-height: 24px; margin-top: -2px; margin-right:5px; vertical-align: middle" />meineCloud.me</a>
+                                <a class="brand unselectable" style="cursor:pointer" onclick="askBeforeLeft()"><img src="img/cloud_24px.png" style="max-height: 24px; margin-top: -2px; margin-right:5px; vertical-align: middle" />meineCloud.me</a>
                             </li>
                             <li>
-				<a style="cursor:pointer" ondblclick="window.location = '/droptiles'" class="active unselectable"><img src="/droptiles/img/dashboard_24px.png"></img> Dashboard</a>
+				<a style="cursor:pointer" ondblclick="window.location = 'droptiles'" class="active unselectable"><img src="img/dashboard_24px.png"></img> Dashboard</a>
 			    </li>
 
                             <li>
@@ -94,13 +94,13 @@
 				    <li><a href="#" onclick="ui.switchTheme('theme-Forest', true)">Forest</a></li>
 				    <li><a href="#" onclick="ui.switchTheme('theme-Flower', true)">Flower</a></li>
 					<li><a href="http://akk.li/pics/anne.jpg">#Caturday</a></li>
-				    <li><a href="#" onclick="ui.switchTheme('theme-NASA-pl', true)"><img src="/droptiles/img/nasa_32x26px.png"></img></a></li>
+				    <li><a href="#" onclick="ui.switchTheme('theme-NASA-pl', true)"><img src="img/nasa_32x26px.png"></img></a></li>
 				    <li><a href="#" onclick="ui.switchTheme('theme-NG-pl', true)"><img src="/droptiles-beta/img/national_geographic_64x19px.png"></img></a></li>
                                 </ul>
                             </li>
 
 				<li>
-           			<a class="active" style="cursor:pointer" onclick="printAbout()"><img src="/droptiles/img/info_26px.png" width="24" height="24"></img> About</a>
+           			<a class="active" style="cursor:pointer" onclick="printAbout()"><img src="img/info_26px.png" width="24" height="24"></img> About</a>
                             </li>
                             
 
